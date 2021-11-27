@@ -1,0 +1,100 @@
+header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+
+    h1{
+        font-size: 2.3rem;
+        font-weight: 200;
+        color: $Very-Dark-Blue;
+    }
+    h2{
+        font-size: 2.3rem;
+        font-weight: 600;
+        color: $Very-Dark-Blue;
+    }
+    p{
+        color: $Grayish-Blue;
+        padding: 1rem;
+    }
+}
+
+.four-card-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .box-container-middle{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.box{
+    border-radius: 0.3rem;
+    background-color: white;
+    text-align: right;
+    padding: 1.8rem;
+    margin: 1rem;
+    box-shadow: rgba(134, 171, 212, 0.35) 0px 13px 27px -5px;
+}
+.box-text{
+    text-align: left;
+    H3{
+        color: $Very-Dark-Blue;
+        font-size: 1.2rem;
+    }
+    p{
+        color: $Grayish-Blue;
+        margin-top: 0.7rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.box1{
+    border-top: 4px solid $Cyan;
+    align-self: center;
+}
+.box2{
+    border-top: 4px solid $Red;
+}
+.box3{
+    border-top: 4px solid $Orange;
+}
+.box4{
+    border-top: 4px solid $Blue;
+    align-self: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    header{
+        h1{
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+        p{
+            padding: 1rem;
+        }
+    }
+    .four-card-section{
+        grid-template-columns: 1fr;
+    }
+    .box-text{
+        H3{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+    }
+    .box{
+
+        img{
+            width: 3.5rem;
+        }
+    }
+}
